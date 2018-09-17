@@ -1,0 +1,9 @@
+{% if list_post %}
+    <ul>
+    {% for p in list_post %}
+        <li>{{ p.title }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No hay datos para mostrar.</p>
+{% endif %}
